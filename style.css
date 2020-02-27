@@ -14,3 +14,9 @@ a {
 h2 {
 	color: #38ab0a;
 }
+
+footer {
+	padding-top: 30px;
+	font-style: italic;
+	font-size: 12px;
+}
