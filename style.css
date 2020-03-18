@@ -4,7 +4,7 @@ body {
 	margin-right: 30px;
 }	
 
-h1 {
+h1,h2,h3 {
 	color: #38ab0a;
 	font-family: cursive;
 }
