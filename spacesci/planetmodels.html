@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Space Science Investigator Badge</title>
+	<link rel="stylesheet" type="text/css" href="space.css">
+
+</head>
+<body>
+
+<h1>Model the Solar System</h1>
+
+<img src="IMG_1890.JPG" alt = "Relative size model of planets" usemap = "#planetmap" />
+
+<map name = "planetmap">
+
+<area shape="circle" coords="210, 230, 100" onclick="showInfo('Jupiter', 139822, 778)">
+
+<area shape="circle" coords="490, 200, 80" onclick="showInfo('Saturn', 116464, 1427)">
+
+<area shape="circle" coords="30, 150, 30" onclick="showInfo('Mercury', 4880, 58)">
+
+</map>
+
+<script>
+
+function showInfo(planetname, planetsize, distancesun) {
+	alert(planetname + "\n diameter: " + planetsize + " km \n distance from sun: " + distancesun + " million km")
+	
+}
+
+
+
+</script>
+</body>
+</html>
