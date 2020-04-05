@@ -8,7 +8,13 @@
 </head>
 <body>
 
-<h1>Model the Solar System</h1>
+<h1>Solar System Models</h1>
+
+<p>The reason I made two models and not just one is that the planets would be really small and spread apart. The planets are many millions of kilometers apart, but only a couple hundred kilometers in diameter. It would be possible to do, but impossible to fit that all in one picture.</p>
+
+<h2>Relative Size Model</h2>
+
+<p>(click the planets to see some information about them)</p>
 
 <img src="IMG_1890.JPG" alt = "Relative size model of planets" usemap = "#planetmap" />
 
@@ -20,7 +26,49 @@
 
 <area shape="circle" coords="30, 150, 30" onclick="showInfo('Mercury', 4880, 58)">
 
+<area shape="circle" coords="75, 45, 30" onclick="showInfo('Earth', 12742, 149)">
+
+<area shape="circle" coords="400, 450, 50" onclick="showInfo('Uranus', 50724, 2871)">
+
+<area shape="circle" coords="100, 450, 55" onclick="showInfo('Neptune', 49244, 4497)">
+
+<area shape="circle" coords="200, 55, 30" onclick="showInfo('Venus', 12103.6, 108)">
+
+<area shape="circle" coords="350, 55, 30" onclick="showInfo('Mars', 6779, 228)">
+
 </map>
+
+
+<p>This model shows the relative sizes of planets. There are many problems with this model. First of all, Saturn's rings are much smaller relative to Saturn. In real life, Saturn's rings are 0.02 kilometers wide. Secondly, there are many things I have left out. In this model I have not included:</p>
+
+<ul>
+	<li>the sun (696000 km in diameter)</li>
+	<li>the dwarf planets</li>
+	<li>the asteroid belt</li>
+	<li>comets</li>
+	<li>moons</li>
+	<li><a href="https://wikipedia.org/wiki/oort_cloud">oort cloud</a></li>
+</ul>
+
+<p>The reason the sun is not in this model is that it is so big. If I did make the sun, it would be 655.5 cm in diameter. That's about 21 feet and 5 inches. We wouldn't have enought paper or watercolors to make that!</p>
+
+<p>To sum up, this model is not a model of the full solar system. It only includes the planets. Here is a chart of the information I used to make this:</p>
+
+<img src="planetchart.png" width="50%"/>
+
+<p>In this model, the scale is one earth diameter = 3 cm (or 12742 km = 3 cm)</p>
+
+<h2>Relative Distance Model</h2>
+<p>Keep Scrolling! →→→</p>
+
+<img src="IMG_1930.JPG" />
+
+<p>This model has the same faults as the last one, exept I put a dot down for the sun. </p>
+<p>Here is a chart of information I used to make this:</p>
+
+<img src="planetmodels2.png" width = "50%"/>
+
+<p>The scale for this model is the distance between earth and the sun is 3 cm.</p>
 
 <script>
 
@@ -28,8 +76,6 @@ function showInfo(planetname, planetsize, distancesun) {
 	alert(planetname + "\n diameter: " + planetsize + " km \n distance from sun: " + distancesun + " million km")
 	
 }
-
-
 
 </script>
 </body>
