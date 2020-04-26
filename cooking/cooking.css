@@ -1,0 +1,14 @@
+body {
+	background: url(cooking.jpg);
+	background-size: 600px;
+	background-repeat: repeat;
+	font-family: Arial, Helveltica;
+}
+
+h1, h2, h3 {
+	color: darkred;
+	font-weight: bold;
+}
+img {
+	width: 50%;
+}

@@ -1,0 +1,14 @@
+body {
+	background: url(leafy.jpg);
+	background-size: 300px;
+	background-repeat: repeat;
+	font-family: Arial, Helveltica;
+}
+
+h1, h2, h3 {
+	color: navy;
+	font-weight: bold;
+}
+img {
+	width: 50%;
+}
