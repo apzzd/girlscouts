@@ -1,6 +1,6 @@
 body {
 	background: url(leafy.jpg);
-	background-size: 300px;
+	background-size: 400px;
 	background-repeat: repeat;
 	font-family: Arial, Helveltica;
 }
@@ -12,3 +12,4 @@ h1, h2, h3 {
 img {
 	width: 50%;
 }
+
