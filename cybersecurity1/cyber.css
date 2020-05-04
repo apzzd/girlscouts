@@ -3,6 +3,9 @@
 		font-size: 25px;
 		width: 70%;
 	}
+	img {
+	width: 50%;
+	}
 	
 }
 
@@ -11,9 +14,7 @@
 		font-size: 30px;
 		width: 100%;
 	}
-	img {
-	width: 50%;
-	}
+	
 }
 
 div#content {
