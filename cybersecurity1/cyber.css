@@ -3,12 +3,16 @@
 		font-size: 25px;
 		width: 70%;
 	}
+	
 }
 
 @media only screen and (max-width: 600px){
 	div#content {
 		font-size: 30px;
 		width: 100%;
+	}
+	img {
+	width: 50%;
 	}
 }
 
@@ -26,7 +30,4 @@ body {
 h1, h2, h3 {
 	color: darkred;
 	font-weight: bold;
-}
-img {
-	width: 50%;
 }
