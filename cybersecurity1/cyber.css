@@ -1,3 +1,21 @@
+@media only screen and (min-width: 601px) {
+	div#content {
+		font-size: 25px;
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	div#content {
+		font-size: 30px;
+		width: 100%;
+	}
+}
+
+div#content {
+	background-color: #fff;
+}
+
 body {
 	background: url(code.jpg);
 	background-size: 700px;
