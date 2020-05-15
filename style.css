@@ -1,18 +1,18 @@
 body {
-	background: url(gscoutbck.png);
+	background: url(gscoutbck.jpg);
 	margin-left: 30px;
 	margin-right: 30px;
 }	
 
 h1,h2,h3 {
-	color: #38ab0a;
+	color: green;
 	font-family: cursive;
 }
 a {
-	color: #38ab0a;	
+	color: darkgreen;	
 }
 h2 {
-	color: #38ab0a;
+	color: green;
 }
 
 footer {
@@ -21,9 +21,6 @@ footer {
 	font-size: 12px;
 }
 
-div#container {
-	background-color: white;
-}
 
 
 @media only screen and (min-width: 601px) {
