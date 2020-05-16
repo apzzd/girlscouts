@@ -13,26 +13,26 @@
 
 <h2>What is a network?</h2>
 
-<p>A network is a a group or system or interconnected people or things (dictionary definition). For this badgr requirement, we will be talking about <b>computer networks</b> (a.k.a the internet), which is made up of servers, routers, switches, and devices (phone, tablet, laptop, etc).</p>
+<p>A network is a a group or system or interconnected people or things. For this badge requirement, we will be talking about <b>computer networks</b> (for example, the internet), which is made up of servers, routers, switches, and devices (phone, tablet, laptop, etc).</p>
 
-<p>When you look up a webpage on your laptop, tablet, or phone, you are sending a request to the website's server. When you search for a website, you type in the URL, but that is linked to the website's IP adress in the DNS, a computer that stores websites' URLs along with their IP adresses.</p>
+<p>When you look up a webpage on your laptop, tablet, or phone, you are sending a request to the website's server. When you search for a website, you type in the URL, but that is linked to the website's IP address in the DNS, the domain name server, a computer that stores websites' URLs along with their IP addresses.</p>
 
-<p>Each device (severs, computers, routers, etc.) has a unique <b>IP adress</b>. An IP adress is like a normal adress that you use to sent a package to someone. Instead of a country, city, state, etc. you have four numbers. The switches use those numbers to pass the information on.</p>
+<p>Each device (servers, computers, routers, etc.) has a unique <b>IP address</b>. An IP address is like a normal address that you use to sent a package to someone. Instead of a country, city, state, etc. you have four numbers. The switches use those numbers to pass the information on.</p>
 
 <p>When you send the request, your computer doesn't connect directly to the server. It passes through multiple switches that lead your request to the correct server.</p>
 
 <img width='100%' src="internet.jpg" />
 
-<h2>How does Data Get Delivered?</h2>
+<h2>How is data delivered?</h2>
 
-<p>When you try to download a song, image, or other thing, you are sending a request to the server that the website you want to download is on. When the server gets that request, it sends the thing you want to download back in something called a packet. If the thing you want is big (like a video or song) it will send multiple packets back and will be reassembled by a program called the TCP. The TCP makes sure all of the parts are there and puts them in order. If some parts are missing, the server sends back those parts.</p>
+<p>When you try to download a song, image, or other file, you are sending a request to the server that the website you want to download is on. When the server gets that request, it sends the thing you want to download back in something called a packet. If the thing you want is big (like a video or song) it will send multiple packets back and will be reassembled by a program called TCP, transmission control protocol. TCP makes sure all of the packets are there and puts them in order. If some packets are missing, the server sends back those packets.</p>
 
 
 <p>For example, let's say that you want to download an image from CybersecurityIsGreat.com:</p>
 <img src="downloadimage.jpg" />
-<p>When you click the 'download' button, you send a request to the server of CybersecurityIsGreat.com. Let's just say that the IP adress for the website is 12.345.678.90. the switches use 12.345.678.90 to send the request to CybersecurityIsGreat!'s server. The server will send the data in a packet or two back to you.</p>
+<p>When you click the 'download' button, you send a request to the server of CybersecurityIsGreat.com. Let's just say that the IP address for the website is 12.345.678.90. The switches use 12.345.678.90 to send the request to CybersecurityIsGreat!'s server. The server will send the data in a packet or two back to you.</p>
 <img src="downloadimg.jpg" />
-<p>Finally, when all of the packets get to your device, the TCP makes sure all of the packets are in order and are all there.</p>
+<p>Finally, when all of the packets get to your device, TCP makes sure all of the packets are in order and are all there.</p>
 <img src="TCPatwork.jpg" />
 <p>Oh No! One of the packets is missing! Now, TCP will tell the server to send a replacement.</p>
 <img src="replacepacket.jpg" />
