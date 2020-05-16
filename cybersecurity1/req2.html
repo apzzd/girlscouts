@@ -13,31 +13,34 @@
 
 <h2>What is a network?</h2>
 
-<p>A network is a a group or system or interconnected people or things. For this badge requirement, we will be talking about <b>computer networks</b> (for example, the internet), which is made up of servers, routers, switches, and devices (phone, tablet, laptop, etc).</p>
+<p>A network is a group or system of interconnected people or things. For this badge requirement, we will be talking about <b>computer networks</b> (for example, the internet), which are made up of servers, routers, switches, and devices (phone, tablet, laptop, etc).</p>
 
-<p>When you look up a webpage on your laptop, tablet, or phone, you are sending a request to the website's server. When you search for a website, you type in the URL, but that is linked to the website's IP address in the DNS, the domain name server, a computer that stores websites' URLs along with their IP addresses.</p>
+<p>When you look up a webpage on your laptop, tablet, or phone, you are sending a request to the website's server. When you search for a website, you type in the URL, but that is linked to the website's IP address in the DNS (the domain name server), a bunch of computers that store websites' domain names along with their IP addresses. The DNS is a network itself!</p>
 
-<p>Each device (servers, computers, routers, etc.) has a unique <b>IP address</b>. An IP address is like a normal address that you use to sent a package to someone. Instead of a country, city, state, etc. you have four numbers. The switches use those numbers to pass the information on.</p>
+<p>Each device (server, computer, router, etc.) has a unique IP address. An IP address is like a normal address that you use to send a package to someone. Instead of a country, city, state, etc. the IP address has four numbers. The switches use those numbers to pass on the information.</p>
 
-<p>When you send the request, your computer doesn't connect directly to the server. It passes through multiple switches that lead your request to the correct server.</p>
+<p>When you send a request, your computer doesn't connect directly to the server. The request passes through multiple switches that lead your request to the correct server.</p>
 
 <img width='100%' src="internet.jpg" />
 
 <h2>How is data delivered?</h2>
+<p>Because there's so much data moving around the internet, some of it's bound to get lost. But when you use a protocol called TCP, you can make sure that it's all there!</p>
 
-<p>When you try to download a song, image, or other file, you are sending a request to the server that the website you want to download is on. When the server gets that request, it sends the thing you want to download back in something called a packet. If the thing you want is big (like a video or song) it will send multiple packets back and will be reassembled by a program called TCP, transmission control protocol. TCP makes sure all of the packets are there and puts them in order. If some packets are missing, the server sends back those packets.</p>
 
 
-<p>For example, let's say that you want to download an image from CybersecurityIsGreat.com:</p>
-<img src="downloadimage.jpg" />
-<p>When you click the 'download' button, you send a request to the server of CybersecurityIsGreat.com. Let's just say that the IP address for the website is 12.345.678.90. The switches use 12.345.678.90 to send the request to CybersecurityIsGreat!'s server. The server will send the data in a packet or two back to you.</p>
-<img src="downloadimg.jpg" />
-<p>Finally, when all of the packets get to your device, TCP makes sure all of the packets are in order and are all there.</p>
-<img src="TCPatwork.jpg" />
-<p>Oh No! One of the packets is missing! Now, TCP will tell the server to send a replacement.</p>
-<img src="replacepacket.jpg" />
-<p>Once all of the packets are there, the image will be downloaded!</p>
-<img src="downloadedimg.jpg" />
+<h2>Bibliography</h2>
+<ul>
+
+	<li>"Wires, cables, and WiFi (video) | Khan Academy," accessed May 9, 2020, <a href="https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org/internet-works-intro/v/the-internet-cybersecurity-and-crime">https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org/internet-works-intro/v/the-internet-cybersecurity-and-crime</a></li>
+	<li>"What is the Internet? (video) | Khan Academy," accessed May 9, 2020, <a href="https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org/internet-works-intro/v/what-is-the-internet">https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org/internet-works-intro/v/what-is-the-internet</a></li>
+	<li>"IP adresses and DNS (video) | Khan Academy," accessed May 9, 2020, <a href="https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org/internet-works-intro/v/the-internet-ip-addresses-and-dns">https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org/internet-works-intro/v/the-internet-ip-addresses-and-dns</a></li>
+	<li>"Internet - BrainPOP," accessed May 2, 2020, <a href="https://www.brainpop.com/technology/computerscience/internet/">https://www.brainpop.com/technology/computerscience/internet/</a></li>
+	<li>"Cloud Computing - BrainPOP," accessed May 2, 2020, <a href="https://www.brainpop.com/technology/communications/cloudcomputing/">https://www.brainpop.com/technology/communications/cloudcomputing/</a></li>
+	
+	<li>"Computer network - Wikipedia," accessed May 2, 2020, <a href="https://en.wikipedia.org/wiki/Computer_network">https://en.wikipedia.org/wiki/Computer_network</a></li>
+
+</ul>
+
 
 </div>
 
