@@ -35,3 +35,22 @@ h1, h2, h3 {
 	color: darkred;
 	font-weight: bold;
 }
+
+
+table {
+
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width:100%;
+}
+
+td, th {
+
+    border: 1px solid #ffa366;
+    text-align: center;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffc299;
+}
