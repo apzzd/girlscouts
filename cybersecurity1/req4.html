@@ -8,8 +8,30 @@
 <body>
 
 <div id='content'>
-<h1>How Computers Communicate</h1>
+<h1>TCP and Computer Protocols</h1>
 
+
+<p>When you try to download a song, image, or other file, you are sending a request to the server that the website you 
+want to download is on. When the server gets that request, it sends the thing you want to download back in something 
+called a packet. If the thing you want is big (like a video or song) it will break it up into multiple packets, 
+send them back, and will be reassembled using a protocol called TCP, transmission control protocol. The TCP 
+protocol is for making sure all of the packets are there and putting them in order. If some packets are missing, 
+the server sends back those packets.</p>
+
+<p>For example, let's say that you want to download an image from CybersecurityIsGreat.com:</p>
+<img src="downloadimage.jpg" />
+<p>When you click the 'download' button, you send a request to the server of CybersecurityIsGreat.com. 
+Let's just say that the IP address for the website is 12.345.678.90. Switches locate the server with the IP address 
+12.345.678.90 and send the request. The server will send the data in multiple packets back to your computer.</p>
+<img src="downloadimg.jpg" />
+<p>Finally, when all of the packets get to your device, your browser,  using the TCP protocol, makes sure all of the 
+packets are in order and are all there.</p>
+<img src="TCPatwork.jpg" />
+<p>Oh No! One of the packets is missing! Now, your browser, using the TCP protocol, will tell the server to send 
+a replacement.</p>
+<img src="replacepacket.jpg" />
+<p>Once all of the packets are there, the image will be downloaded!</p>
+<img src="downloadedimg.jpg" />
 
 
 </div>
