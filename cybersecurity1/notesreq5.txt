@@ -1,0 +1,23 @@
+malware means malicious software
+
+Malware is an executable program that gets installed unintentionally and harms the user and their device. Malware can also spread to other computers. 
+
+there are 3 types of malware: Trojan horses, worms, and viruses
+
+Trojan horses look like free programs that you can download, but when you try to download them, you are actually downloading malware. Many Trojan horses are disguised as security updates.
+
+Worms look for little holes in your network and try to get in. If they can, then they duplicate on everything connected to the network.
+
+Viruses spread to other pieces of software and use it to repicate itself and (if the program contacts other devices) spread it to other devices.
+
+The objectives (the 'payload') of malware are to lock down your device for a ransom, spy on you and find your passwords, personal information, and credit card numbers, delete or lock down your files, or let someone control your computer.
+
+Some malware makes many devices make requests to a server. That is called a DDOS, or a Distributed Denial Of Service attack. Many computers send requests to the server (distrubuted) until the server shuts down and can't serve the website anymore (denial of sevice).
+
+To prevent malware problems, you can use the security updates, not click on suspicious links that you get on messages, email, or other other communication apps or social networkings sites, and only installing software that you know is legitimate.
+
+<h2>Bibliography</h2>
+ <ul>
+ <li>"Malware - BrainPOP," accessed June 20, 2020, <a>https://www.brainpop.com/technology/computerscience/malware/</a>.</li>
+ <li>"Cybersecurity and crime (video) | Khan Academy," accessed June 20, 2020, <a>https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org/internet-works-intro/v/the-internet-cybersecurity-and-crime</a>.</li> 
+</ul>
