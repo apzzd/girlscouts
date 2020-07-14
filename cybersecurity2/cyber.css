@@ -1,0 +1,56 @@
+@media only screen and (min-width: 601px) {
+	div#content {
+		font-size: 25px;
+		width: 70%;
+	}
+	img {
+	width: 50%;
+	}
+	
+}
+
+@media only screen and (max-width: 600px){
+	div#content {
+		font-size: 30px;
+		width: 100%;
+	}
+	img {
+	width: 100%;
+	}
+	
+}
+
+div#content {
+	background-color: #fff;
+}
+
+body {
+	background: url(code.jpg);
+	background-size: 700px;
+	background-repeat: repeat;
+	font-family: Arial, Helveltica;
+}
+
+h1, h2, h3 {
+	color: darkred;
+	font-weight: bold;
+}
+
+
+table {
+
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width:100%;
+}
+
+td, th {
+
+    border: 1px solid #ffa366;
+    text-align: center;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffc299;
+}
