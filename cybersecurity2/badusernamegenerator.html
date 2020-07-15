@@ -1,0 +1,115 @@
+<html> 
+<head>
+<script>
+	document.nav = navigator;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython_stdlib.js">
+</script>
+<script src="main.py" type="text/python"></script>
+
+
+<style>
+input {
+	width:300px;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+#unames{
+	background-color: lightblue;
+}
+
+#pass {
+	background-color: lightblue;
+}
+
+
+#submit {
+	color: green;
+	background-color: lightgreen;
+	width: 600px;
+	height: 30px;
+}
+#shownamez {
+	color: black;
+	background-color: skyblue;
+	width: 150px;
+	height: 25px;
+	font-size: 13px;
+}
+
+#showpass {
+	color: black;
+	background-color: skyblue;
+	width: 150px;
+	height: 25px;
+	font-size: 13px;
+}
+
+#content {
+	font-weight: bold; 
+	color: black;
+	
+}
+body {
+	background-color: white;
+	font-family: Arial;
+}
+.form {
+	margin: 20px;
+	width: 60%;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+b {
+	text-align: center;
+}
+
+
+h1 {
+	background-color: skyblue;
+	text-align: center;
+	padding: 15px;
+	box-shadow: 9px 9px 5px grey;
+ }
+
+
+
+</style>
+
+
+</head>
+
+<body onload="brython()" id='content'>
+
+<h1>Username & Password Creator</h1>
+
+<b>Fill out the form and then click the 'show usernames' and 'show passwords' buttons to get some great reccomendations!</b>
+
+
+<p></p>
+
+<figure class='form'>
+	
+	<input id="name" placeholder="first name">
+	<input id="age" placeholder="age">
+	<input id="hobb" placeholder="hobby">
+	<input id="anim" placeholder="animal">
+	<input id="color" placeholder="color">
+	<input id="food" placeholder="food">
+	<button id="submit">submit</button>
+	
+</figure>
+
+
+<p><button id='shownamez' class='button'>Show Usernames</button></p>
+<p><button id='showpass' class='button'>Show Passwords</button></p>
+
+
+<p id='unames'></p>
+<p id='pass'></p>
+</body>
+</html>
