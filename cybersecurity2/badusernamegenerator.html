@@ -15,22 +15,22 @@ input {
 	width:300px;
 	font-family: Arial;
 	font-size: 15px;
+	margin: 5px;
 }
 
-#unames{
-	background-color: lightblue;
-}
-
-#pass {
-	background-color: lightblue;
+#unames, #pass{
+	background-color: #e6ffff;
+	padding: 5px;
 }
 
 
 #submit {
 	color: green;
 	background-color: lightgreen;
-	width: 600px;
+	width: 300px;
 	height: 30px;
+	font-size: 15px;
+	margin: 10px;
 }
 #shownamez {
 	color: black;
@@ -61,7 +61,6 @@ body {
 	margin: 20px;
 	width: 60%;
 	text-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
 
 b {
@@ -72,11 +71,13 @@ b {
 h1 {
 	background-color: skyblue;
 	text-align: center;
-	padding: 15px;
-	box-shadow: 9px 9px 5px grey;
+	margin-bottom: 10px;
+	padding: 20px;
  }
 
-
+div {
+	visibility: hidden;
+}
 
 </style>
 
@@ -87,7 +88,7 @@ h1 {
 
 <h1>Username & Password Creator</h1>
 
-<b>Fill out the form and then click the 'show usernames' and 'show passwords' buttons to get some great reccomendations!</b>
+<b>Fill out the form to get some great recommendations!</b>
 
 
 <p></p>
@@ -103,13 +104,12 @@ h1 {
 	<button id="submit">submit</button>
 	
 </figure>
-
-
-<p><button id='shownamez' class='button'>Show Usernames</button></p>
-<p><button id='showpass' class='button'>Show Passwords</button></p>
-
-
+<div id='myDIV'>
+<b>Select and copy some of these usernames and passwords!</b>
+<h4>Usernames:</h4>
 <p id='unames'></p>
+<h4>Passwords</h4>
 <p id='pass'></p>
+</div>
 </body>
 </html>
