@@ -1,12 +1,27 @@
-from browser import document, alert
+from browser import document, alert,ajax
 from random import *
 import browser
+import json
+
+
+def on_complete(req):
+   if req.status == 200 or req.status == 0:
+	   alert("WARNING: I've got some of your information already!\n Language: " + document.nav.language +'\n Browser Online:' + str(document.nav.onLine) +'\n Platform:' + document.nav.platform + '\n Browser Name: ' +  document.nav.appName + '\n Where you live: ' + json.loads(req.text)['city'])
+
+req = ajax.Ajax()
+req.bind('complete', on_complete)
+req.open('GET', 'https://ipapi.co/json/', True)
+##req.set_header('content-type', 'application/x-www-form-urlencoded')
+# send data as a dictionary
+req.send()
+
+
+
+
 
 def print_loc(loc):
 	print(loc)
 	
-
-alert("WARNING: I've got some of your information already!\n Language: " + document.nav.language +'\n Browser Online:' + str(document.nav.onLine) +'\n Platform:' + document.nav.platform + '\n Browser Name: ' + document.nav.appName)
 
 
 def click(ev):
