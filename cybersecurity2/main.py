@@ -3,10 +3,17 @@ from random import *
 import browser
 import json
 
+def clear():
+	document['nottext'].text = ''
+
+
 
 def on_complete(req):
    if req.status == 200 or req.status == 0:
-	   alert("WARNING: I've got some of your information already!\n Language: " + document.nav.language +'\n Browser Online:' + str(document.nav.onLine) +'\n Platform:' + document.nav.platform + '\n Browser Name: ' +  document.nav.appName + '\n Where you live: ' + json.loads(req.text)['city'])
+	  browser.console.log(document['nottext'].text)
+	  clear()
+	  opennote()
+	  document['nottext'] <= "WARNING: I've got some of your information already!\n" + '\n Browser Online:' + str(document.nav.onLine) +' | Platform:' + document.nav.platform + ' | Where you live: ' + json.loads(req.text)['city'] + ', ' + json.loads(req.text)['region'] + ' | Internet Sevice Provider: ' + json.loads(req.text)['org']
 
 req = ajax.Ajax()
 req.bind('complete', on_complete)
@@ -18,7 +25,6 @@ req.send()
 
 
 
-
 def print_loc(loc):
 	print(loc)
 	
@@ -26,7 +32,9 @@ def print_loc(loc):
 
 def click(ev):
 	if document['name'].value and document['age'].value and document['anim'].value and document['hobb'].value:
-		alert('Hey: I can save this information, you know. Now I know that your name is ' + document['name'].value + ' and that you are ' + document['age'].value + ' years old.')
+		clear()
+		opennote()
+		document['nottext'] <= 'Hey: I can save this information, you know. Now I know that your name is ' + document['name'].value + ' and that you are ' + document['age'].value + ' years old.'
 		showunames()
 		showpass()
 		document.getElementById("myDIV").style.visibility = 'visible'
@@ -67,15 +75,26 @@ def showpass():
 def uselect(ev):
 	##alert(ev.target)
 	t = document.getSelection().toString()
-	alert("Uh oh! Don't use this username. Now I know one of your possible usernames: " + str(t) + '.')
+	clear()
+	opennote()
+	document['nottext'] <= "Uh oh! Don't use this username. Now I know one of your possible usernames: " + str(t) + '.'
 	
 def pselect(ev):
 	##alert(ev.target)
 	t = document.getSelection().toString()
-	alert("Uh oh! Don't use this password. Now I know one of your possible passwords: " + str(t) + '.')
+	clear()
+	opennote()
+	document['nottext'] <= "Uh oh! Don't use this password. Now I know one of your possible passwords: " + str(t) + '.'
 
+	
+def opennote():
+	document["notices"].style.visibility = 'visible'
+	
+def closenote(ev):
+	document["notices"].style.visibility = 'hidden'
 
 # bind event 'click' on button to function echo
 document["submit"].bind("click", click)
 document['unames'].bind('copy', uselect)
 document['pass'].bind('copy', pselect)
+document['bluebtn'].bind('click', closenote())
