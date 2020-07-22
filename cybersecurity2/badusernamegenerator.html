@@ -1,7 +1,7 @@
 <html> 
 <head>
 <script>
-	document.nav = navigator;
+    document.nav = navigator;
 </script>
 <script src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython.min.js">
 </script>
@@ -12,73 +12,90 @@
 
 <style>
 input {
-	width:300px;
-	font-family: Arial;
-	font-size: 15px;
-	margin: 5px;
+    width:300px;
+    font-family: Arial;
+    font-size: 15px;
+    margin: 5px;
 }
-
-#unames, #pass{
-	background-color: #e6ffff;
-	padding: 5px;
+ 
+#bluebtn{
+    background-color: #e6ffff;
+    padding: 5px;
 }
 
 
 #submit {
-	color: green;
-	background-color: lightgreen;
-	width: 300px;
-	height: 30px;
-	font-size: 15px;
-	margin: 10px;
+    color: green;
+    background-color: lightgreen;
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    margin: 10px;
 }
 #shownamez {
-	color: black;
-	background-color: skyblue;
-	width: 150px;
-	height: 25px;
-	font-size: 13px;
+    color: black;
+    background-color: skyblue;
+    width: 150px;
+    height: 25px;
+    font-size: 13px;
 }
 
 #showpass {
-	color: black;
-	background-color: skyblue;
-	width: 150px;
-	height: 25px;
-	font-size: 13px;
+    color: black;
+    background-color: skyblue;
+    width: 150px;
+    height: 25px;
+    font-size: 13px;
 }
 
 #content {
-	font-weight: bold; 
-	color: black;
-	
+    font-weight: bold; 
+    color: black;
+    
 }
 body {
-	background-color: white;
-	font-family: Arial;
+    background-color: white;
+    font-family: Arial;
 }
 .form {
-	margin: 20px;
-	width: 60%;
-	text-align: center;
+    margin: 20px;
+    width: 60%;
+    text-align: center;
 } 
 
 b {
-	text-align: center;
+    text-align: center;
 }
 
 
 h1 {
-	background-color: skyblue;
-	text-align: center;
-	margin-bottom: 10px;
-	padding: 20px;
+    background-color: skyblue;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
  }
 
-div {
-	visibility: hidden;
+#myDIV {
+    visibility: hidden;
 }
 
+
+#notices {
+    color: cornflowerblue;
+    font-weight: bold;
+    margin: 10px;
+    border: 1px solid skyblue;
+    padding: 10px;
+    width: 50%;
+    box-shadow: 10px 10px 5px lightgrey;
+    visibility: hidden;
+}
+#noticesheader {
+    color: cornflowerblue;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
 </style>
 
 
@@ -94,15 +111,15 @@ div {
 <p></p>
 
 <figure class='form'>
-	
-	<input id="name" placeholder="first name">
-	<input id="age" placeholder="age">
-	<input id="hobb" placeholder="hobby">
-	<input id="anim" placeholder="animal">
-	<input id="color" placeholder="color">
-	<input id="food" placeholder="food">
-	<button id="submit">submit</button>
-	
+    
+    <input id="name" placeholder="first name">
+    <input id="age" placeholder="age">
+    <input id="hobb" placeholder="hobby">
+    <input id="anim" placeholder="animal">
+    <input id="color" placeholder="color">
+    <input id="food" placeholder="food">
+    <button id="submit">submit</button>
+    
 </figure>
 <div id='myDIV'>
 <b>Select and copy some of these usernames and passwords!</b>
@@ -111,5 +128,18 @@ div {
 <h4>Passwords</h4>
 <p id='pass'></p>
 </div>
+
+
+
+<div id="notices">
+    
+    
+    <h3 id="noticesheader">Notices</h3>
+    <p id='nottext'>derpderp</p>
+    <button id="bluebtn">Close Notice</button>
+    
+</div>
+
+
 </body>
 </html>
