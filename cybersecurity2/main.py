@@ -10,6 +10,7 @@ def clear():
 
 def on_complete(req):
    if req.status == 200 or req.status == 0:
+      alert('here');
       browser.console.log(document['nottext'].text)
       clear()
       opennote()
