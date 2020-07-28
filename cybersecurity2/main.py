@@ -1,4 +1,4 @@
-from browser import document, alert,ajax
+from browser import document, alert,ajax,html
 from random import *
 import browser
 import json
@@ -10,11 +10,14 @@ def clear():
 
 def on_complete(req):
    if req.status == 200 or req.status == 0:
-      alert('here');
       browser.console.log(document['nottext'].text)
       clear()
       opennote()
-      document['nottext'] <= "WARNING: I've got some of your information already!\n" + '\n Browser Online:' + str(document.nav.onLine) +' | Platform:' + document.nav.platform + ' | Where you live: ' + json.loads(req.text)['city'] + ', ' + json.loads(req.text)['region'] + ' | Internet Sevice Provider: ' + json.loads(req.text)['org']
+      document['nottext'] <= html.P("WARNING: I've got some of your information already!")
+      document['nottext'] <= html.P('Browser Online:' + str(document.nav.onLine))
+      document['nottext'] <= html.P('Platform:' + document.nav.platform)
+      document['nottext'] <= html.P('Where you live: ' + json.loads(req.text)['city'] + ', ' + json.loads(req.text)['region'])
+      document['nottext'] <= html.P('Internet Sevice Provider: ' + json.loads(req.text)['org'])
 
 req = ajax.Ajax()
 req.bind('complete', on_complete)
