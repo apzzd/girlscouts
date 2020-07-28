@@ -31,10 +31,13 @@ body {
 	font-family: Arial, Helveltica;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h2 a {
 	color: darkred;
 	font-weight: bold;
 }
+
+
+
 
 
 table {
