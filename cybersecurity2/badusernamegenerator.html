@@ -11,6 +11,18 @@
 
 
 <style>
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container > div {
+    width: 50%;
+}
+
+
 input {
     width:300px;
     font-family: Arial;
@@ -77,6 +89,7 @@ h1 {
 
 #myDIV {
     visibility: hidden;
+    background-color: #e6e6ff;
 }
 
 
@@ -107,12 +120,10 @@ h1 {
 
 <b>Fill out the form to get some great recommendations!</b>
 
-
-<p></p>
-
-<figure class='form'>
-    
-    <input id="name" placeholder="first name">
+<div class="flex-container">
+    <div>
+        <figure class='form'>
+            <input id="name" placeholder="first name">
     <input id="age" placeholder="age">
     <input id="hobb" placeholder="hobby">
     <input id="anim" placeholder="animal">
@@ -120,25 +131,28 @@ h1 {
     <input id="food" placeholder="food">
     <button id="submit">submit</button>
     
-</figure>
+        </figure>
+    </div>
+
+    <div id="notices">
+            <h3 id="noticesheader">Notices</h3>
+    <p id='nottext'>derpderp</p>
+    <button id="bluebtn">Close Notice</button>
+    </div>
+
+</div>
+
+
+
+
 <div id='myDIV'>
 <b>Select and copy some of these usernames and passwords!</b>
-<h4>Usernames:</h4>
+<h3>Usernames:</h3>
 <p id='unames'></p>
-<h4>Passwords</h4>
+<h3>Passwords:</h3>
 <p id='pass'></p>
 </div>
 
-
-
-<div id="notices">
-    
-    
-    <h3 id="noticesheader">Notices</h3>
-    <p id='nottext'>derpderp</p>
-    <button id="bluebtn">Close Notice</button>
-    
-</div>
 
 
 </body>

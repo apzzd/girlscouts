@@ -1,4 +1,4 @@
-from browser import document, alert,ajax
+from browser import document, alert,ajax,html
 from random import *
 import browser
 import json
@@ -13,7 +13,11 @@ def on_complete(req):
       browser.console.log(document['nottext'].text)
       clear()
       opennote()
-      document['nottext'] <= "WARNING: I've got some of your information already!\n" + '\n Browser Online:' + str(document.nav.onLine) +' | Platform:' + document.nav.platform + ' | Where you live: ' + json.loads(req.text)['city'] + ', ' + json.loads(req.text)['region'] + ' | Internet Sevice Provider: ' + json.loads(req.text)['org']
+      document['nottext'] <= html.P("WARNING: I've got some of your information already!")
+      document['nottext'] <= html.P('Browser Online:' + str(document.nav.onLine))
+      document['nottext'] <= html.P('Platform:' + document.nav.platform)
+      document['nottext'] <= html.P('Where you live: ' + json.loads(req.text)['city'] + ', ' + json.loads(req.text)['region'])
+      document['nottext'] <= html.P('Internet Sevice Provider: ' + json.loads(req.text)['org'])
 
 req = ajax.Ajax()
 req.bind('complete', on_complete)
@@ -51,7 +55,12 @@ def showunames():
         un5 = document['color'].value + document['anim'].value + document['age'].value + str(randint(0,9)) + str(randint(0,9))
         un6 = document['anim'].value + document['food'].value + document['age'].value + str(randint(0,9)) + str(randint(0,9))
         
-        document['unames'] <= un1 + ' | ' + un2 + ' | ' + un3 + ' | ' + un4 + ' | ' + un5 + ' | ' + un6
+        document['unames'] <= html.P(un1)
+        document['unames'] <= html.P(un2)
+        document['unames'] <= html.P(un3)
+        document['unames'] <= html.P(un4)
+        document['unames'] <= html.P(un5)
+        document['unames'] <= html.P(un6)
     else:
         alert('You must fill out the form first')
         
@@ -70,7 +79,12 @@ def showpass():
     p5 = choice(number) + choice(adj) + choice(nouns) + choice(verb) + choice(nouns)
     p6 = choice(number) + choice(adj) + choice(food) + choice(nouns)
     
-    document['pass'] <= p1 + ' | ' + p2 + ' | ' + p3 + ' | ' + p4 + ' | ' + p5 + ' | ' + p6
+    document['pass'] <= html.P(p1)
+    document['pass'] <= html.P(p2)
+    document['pass'] <= html.P(p3)
+    document['pass'] <= html.P(p4)
+    document['pass'] <= html.P(p5)
+    document['pass'] <= html.P(p6)
  
 def uselect(ev):
     ##alert(ev.target)
@@ -97,4 +111,4 @@ def closenote(ev):
 document["submit"].bind("click", click)
 document['unames'].bind('copy', uselect)
 document['pass'].bind('copy', pselect)
-document['bluebtn'].bind('click', closenote())
+document['bluebtn'].bind('click', closenote)
