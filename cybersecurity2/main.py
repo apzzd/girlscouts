@@ -55,7 +55,12 @@ def showunames():
         un5 = document['color'].value + document['anim'].value + document['age'].value + str(randint(0,9)) + str(randint(0,9))
         un6 = document['anim'].value + document['food'].value + document['age'].value + str(randint(0,9)) + str(randint(0,9))
         
-        document['unames'] <= un1 + ' | ' + un2 + ' | ' + un3 + ' | ' + un4 + ' | ' + un5 + ' | ' + un6
+        document['unames'] <= html.P(un1)
+        document['unames'] <= html.P(un2)
+        document['unames'] <= html.P(un3)
+        document['unames'] <= html.P(un4)
+        document['unames'] <= html.P(un5)
+        document['unames'] <= html.P(un6)
     else:
         alert('You must fill out the form first')
         
@@ -74,7 +79,12 @@ def showpass():
     p5 = choice(number) + choice(adj) + choice(nouns) + choice(verb) + choice(nouns)
     p6 = choice(number) + choice(adj) + choice(food) + choice(nouns)
     
-    document['pass'] <= p1 + ' | ' + p2 + ' | ' + p3 + ' | ' + p4 + ' | ' + p5 + ' | ' + p6
+    document['pass'] <= html.P(p1)
+    document['pass'] <= html.P(p2)
+    document['pass'] <= html.P(p3)
+    document['pass'] <= html.P(p4)
+    document['pass'] <= html.P(p5)
+    document['pass'] <= html.P(p6)
  
 def uselect(ev):
     ##alert(ev.target)
@@ -101,4 +111,4 @@ def closenote(ev):
 document["submit"].bind("click", click)
 document['unames'].bind('copy', uselect)
 document['pass'].bind('copy', pselect)
-document['bluebtn'].bind('click', closenote())
+document['bluebtn'].bind('click', closenote)
