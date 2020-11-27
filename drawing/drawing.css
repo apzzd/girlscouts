@@ -10,6 +10,8 @@ h1, h2, h3 {
 	color: navy;
 	font-weight: bold;
 }
-img {
-	width: 50%;
+.artwork {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
