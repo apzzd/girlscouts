@@ -1,0 +1,17 @@
+body {
+	background: url(watercolor-bg.jpeg);
+	background-opacity: 0.5;
+	background-size: 700px;
+	background-repeat: repeat;
+	font-family: Arial, Helveltica;
+}
+
+h1, h2, h3 {
+	color: navy;
+	font-weight: bold;
+}
+.artwork {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
